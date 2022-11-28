@@ -28,7 +28,6 @@ header >div:first-child img {
 .search{
     display: grid;
     grid-template-columns: 80% 20% ;
-    border: 1px solid #70757a;
     border-radius: 20px;
     width: 35em;
     padding: 7px;
