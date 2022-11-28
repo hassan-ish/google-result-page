@@ -1,0 +1,137 @@
+/* Start Global styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+body {
+    background-color: #202124;
+    color: #fff;
+}
+/* End Global Styling */
+/* Start header */
+header {
+    display: grid;
+    grid-template-columns: 8em 1fr 8em;
+}
+/* Google Logo */
+
+header >div:first-child  {
+    display: grid;
+    place-items: center;
+}
+header >div:first-child img {
+    width: 70%;
+    cursor: pointer;
+}
+/*Search input Styling */
+.search{
+    display: grid;
+    grid-template-columns: 80% 20% ;
+    border: 1px solid #70757a;
+    border-radius: 20px;
+    width: 35em;
+    padding: 7px;
+    margin: 30px;
+    background-color: #303134;
+}
+.search input {
+    color: #fff;
+    background-color: inherit;
+    caret-color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.search input:hover {
+    outline: none;
+}
+.spacer {
+    border-left: 1px solid #70757a;
+}
+/* Icon section in input */
+.search .icons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+
+.icons svg , .icons img{
+    width: 24px;    
+    cursor: pointer;
+}
+
+/* the nav section */
+nav {
+    display: grid;
+    grid-template-columns: repeat(10 , auto);
+    justify-content: space-between;
+    margin: 25px 25px 10px;
+    width: 35em;
+    color: #70757a;
+}
+nav svg {
+    width: 16px;
+    margin-right: 5px;
+}
+nav > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: stretch;
+    cursor: pointer;
+}
+/* first element in nav  */
+nav >div:first-child {
+    position: relative;
+    color: #8ab4f8;
+}
+/* the line in bottom of first nav element */
+nav >div:first-child::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #8ab4f8;
+    position: absolute;
+    bottom: -10px;
+}
+/* last element in nav */
+nav > div:last-child{
+    grid-column: 10;
+}
+
+
+
+/*The three icons in far left */
+header > div:last-child {
+    display: grid;
+    grid-template-columns: 24px 24px 24px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+header > div:last-child>* {
+    cursor: pointer;
+}
+header > div:last-child svg{
+    width: 24px;
+}
+/* profile pic */
+.profile-pic{
+    color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 32px;
+}
+.profile-pic img{
+    margin: 0;
+    border-radius: 50%;
+    background-color: rgba(81, 81, 81, 0.333);
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+    color:#70757a;
+}
